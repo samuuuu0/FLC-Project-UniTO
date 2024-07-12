@@ -1,0 +1,44 @@
+/* esercizio_semplice 
+read(x, y);
+print(1, +(2, 3, 4));
+if (> x y) print(x) else print(y) end;
+for (z:=x; > z 0) do {
+	assign [- z 1 to z];
+	print(z)
+}
+*/
+
+/* max_tre_num 
+read(x, y, z);
+if (> x y)
+	if (> x z) print(x) else print(z) end
+else
+	if (> y z) print(y) else print(z) end
+end
+*/
+
+/* euclid 
+read(a, b);
+for (x:= 0; <> a b) do
+    if (> a b) assign [ - a b to a ]
+    else assign [ - b a to b ]
+    end;
+print(a)
+*/
+
+/* factorial.lft 
+read(n);
+assign [2 to i] [1 to f];
+for (<= i n) do
+	assign [*(f, i) to f] [+(i, 1) to i];
+print(f)
+*/
+
+/* assegnamenti_multipli.lft 
+read(x);
+assign [1 to y, z];
+for (> x 0) do {
+	assign [- x 1 to x] [*(y, 2) to y] [*(z, 3) to z];
+	print(y,z)
+}
+*/

@@ -1,0 +1,68 @@
+// Lexer
+
+/* calcolare la velocità */
+// assign 300 to d; // velocità
+// assign 10 to t; // tempo
+// print(* d t)
+
+// Standard Parser
+
+//  )2  // start
+// 2+(  // expr
+// 5+)  // term
+// 1+2( // termp
+// 1*+2 // fact
+// 1+2) // Syntax Error
+
+// 3 + 5 * (2 - 4) + 10 - 2 * (6 / 2) + (4 + 2) * (8 / 4) + 5 * (3 + 2) - 8 / 2 + 12 / (4 - 2) + 5 * 2
+
+// Parser
+
+/* esercizio_semplice 
+read(x, y);
+print(1, +(2, 3, 4));
+if (> x y) print(x) else print(y) end;
+for (z:=x; > z 0) do {
+	assign [- z 1 to z];
+	print(z)
+}
+*/
+
+/* max_tre_num 
+read(x, y, z);
+if (> x y)
+	if (> x z) print(x) else print(z) end
+else
+	if (> y z) print(y) else print(z) end
+end
+*/
+
+/* euclid 
+read(a, b);
+for (x:= 0; <> a b) do
+    if (> a b) assign [ - a b to a ]
+    else assign [ - b a to b ]
+    end;
+print(a)
+*/
+
+/* factorial.lft 
+read(n);
+assign [2 to i] [1 to f];
+for (<= i n) do
+	assign [*(f, i) to f] [+(i, 1) to i];
+print(f)
+*/
+
+/* assegnamenti_multipli.lft 
+read(x);
+assign [1 to y, z];
+for (> x 0) do {
+	assign [- x 1 to x] [*(y, 2) to y] [*(z, 3) to z];
+	print(y,z)
+}
+*/
+
+// Valutatore
+
+// 3 + 5 * (2 - 4) + 10 - 2 * (6 / 2) + (4 + 2) * (8 / 4) + 5 * (3 + 2) - 8 / 2 + 12 / (4 - 2) + 5 * 2
